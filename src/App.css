@@ -1,32 +1,161 @@
-.App {
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+@import url('https://fonts.googleapis.com/css?family=Merriweather+Sans');
+@import url('https://fonts.googleapis.com/css?family=K2D:700');
+
+
+/*
+-------------------------------------------------------------Whole page----------------------------------------------------
+*/
+
+body {
+    font-family: "Open Sans", serif;
+    text-align: center;
+    
+  }
+
+.wrapper{
+    background: linear-gradient(to bottom, #63aaad, #35817a);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:410vh;
+}
+
+.main {
+  height:387vh;
+  background-color: #e6eff3;
+  box-shadow: 0px 15px 40px -15px rgba(0,0,0,0.75);
+  width: 80%;
+  margin: 50 auto;
+
+}
+
+h2{
   text-align: center;
+  background-color: #6cc5e970;
+  font-family: 'Merriweather Sans', sans-serif;
+  margin-top:5;
+  padding-top: 10px;
+  height: 40px;
+  text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+h3{
+  font-family: 'K2D', sans-serif;
+  margin-top:0px;
+  height: 35px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p{
+  padding:5px 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
+ul{
+  text-align: center;
+  display: inline-block;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo{
+  width:100px;
+  height:100px;
+  display: inline;
+}
+
+.bg{
+  width:100%;
+  height:60vh;
+  display: inline;
+}
+
+/*
+---------------------------------------------------------Overview--------------------------------------------------
+*/
+.overview{
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.overviewLabel{
+  margin-top:0;
+}
+
+/*
+--------------------------------------------------------Landing Page---------------------------------------------
+*/
+
+.landing{
+  background-color: #bdc2c470;
+
+}
+
+.landingname{
+  font-family: 'Reem Kufi', sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 4rem;
+  padding-top: 5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+
+}
+
+.tagline{
+  font-size: 1.375rem;
+  margin: 1.5rem 0;
+  margin-bottom: 0;
+  font-weight: 200;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+
+/*
+----------------------------------------------------------Skills------------------------------------------------------
+*/
+
+.content-grid{
+  flex:auto;
+}
+
+/*
+----------------------------------------------------------Contact-----------------------------------------------------
+*/
+
+.contact{
+
+  text-align:center;
+  display: inline-block;
+  padding: 15px;
+  text-decoration:none;
+  list-style-type: none;
+}
+
+/*
+---------------------------------------------------------Qualifications---------------------------------------------------
+*/
+
+.heading3{
+  background-color: #6cc6e93a;
+  padding: 0%
+}
+
+.qual{
+  text-decoration:none;
+  list-style-type: none;
+}
+
+/*
+--------------------------------------------------------Footer---------------------------------------------------------
+*/
+
+.footer{
+  background-color: #6cc5e970;
+  height: 100px;
+  padding:10px;
 }

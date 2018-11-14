@@ -1,28 +1,35 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react'
+import Fade from 'react-reveal/Fade';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
-  }
+//Import other file pages
+import Overview from "./Components/Overview.js"
+import About from "./Components/about"
+import Qualifications from "./Components/qualifications"
+import Landing from "./Components/landing"
+import Contact from "./Components/contact"
+import Cards from "./cards/cards"
+import Footer from "./Components/footer"
+
+//Stylesheet
+import "./App.css"
+
+class CV extends Component{
+    render(){
+        return(
+            <div className="wrapper">
+              <div className="main">
+                
+                <div><Landing /></div>
+                <div><Overview /></div>
+                <div><About /></div>
+                <div><Qualifications /></div>
+                <div><Cards /></div>
+                <div><Contact /></div>
+                <div><Footer /></div>
+              </div>
+            </div>
+        );
+    }
 }
 
-export default App;
+export default CV
